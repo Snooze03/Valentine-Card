@@ -6,11 +6,11 @@ var defaultMsg = "Will you be my valentine beb?";
 
 yes_btn.addEventListener("click", () => {
     // Image section
-    if (img.src.match("/imgs/no_btn_pressed.gif") || img.src.match("/imgs/default.gif")) {
-        img.src = "/imgs/yes_btn_pressed.gif";
+    if (img.src.match("imgs/no_btn_pressed.gif") || img.src.match("imgs/default.gif")) {
+        img.src = "imgs/yes_btn_pressed.gif";
     }
 
-    message.textContent = "💖 YEY! See you soon my love 💖";
+    message.textContent = "💖 See you soon my love 💖";
 
     // Fire works
     var duration = 15 * 1000;
@@ -37,15 +37,15 @@ yes_btn.addEventListener("click", () => {
 });
 
 no_btn.addEventListener("mouseenter", () => {
-    if (img.src.match("/imgs/default.gif")) {
-        img.src = "/imgs/no_hover.gif";
+    if (img.src.match("imgs/default.gif")) {
+        img.src = "imgs/no_hover.gif";
     }
     message.textContent = "babe wag";
 });
 
 yes_btn.addEventListener("mouseenter", () => {
-    if (img.src.match("/imgs/no_hover.gif")) {
-        img.src = "/imgs/default.gif";
+    if (img.src.match("imgs/no_hover.gif")) {
+        img.src = "imgs/default.gif";
     }
 
     if (!message.textContent.match(defaultMsg)) {
@@ -54,6 +54,6 @@ yes_btn.addEventListener("mouseenter", () => {
 });
 
 no_btn.addEventListener("click", () => {
-    img.src = "/imgs/no_btn_pressed.gif";
+    img.src = "imgs/no_btn_pressed.gif";
     message.textContent = "iyak ako :<";
 });
