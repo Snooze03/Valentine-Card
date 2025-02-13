@@ -14,7 +14,6 @@
 .card__body {
   display: flex;
   flex-direction: column;
-  /* gap: 1rem; */
   align-items: center;
 
   font-family: "Dongle", serif;
